@@ -51,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trees\RedBlackBST.cs" />
+    <Compile Include="Trees\TrieTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
