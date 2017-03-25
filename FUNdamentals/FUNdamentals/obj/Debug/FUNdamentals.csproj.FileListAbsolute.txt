@@ -1,1 +1,6 @@
 C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\bin\Debug\FUNdamentals.exe.config
+C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\bin\Debug\FUNdamentals.exe
+C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\bin\Debug\FUNdamentals.pdb
+C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\obj\Debug\FUNdamentals.csprojResolveAssemblyReference.cache
+C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\obj\Debug\FUNdamentals.exe
+C:\Users\Chase\Git\Algorithms-DataStructures\FUNdamentals\FUNdamentals\obj\Debug\FUNdamentals.pdb
