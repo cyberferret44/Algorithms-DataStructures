@@ -15,13 +15,7 @@ namespace FUNdamentals.Heap
             heap.Add(value); // stick it on the end...
             int index = heap.Count - 1;
 
-            while(HasParent(index) && value.CompareTo(heap[ParentIndex(index)]) < 0)
-            {
-                T temp = heap[index];
-                heap[index] = heap[ParentIndex(index)];
-                heap[ParentIndex(index)] = temp;
-                index = ParentIndex(index);
-            }
+            FilterUp(index);
         }
 
         public void Delete(T value)
@@ -35,9 +29,34 @@ namespace FUNdamentals.Heap
                 // Heapify
                 if(index < heap.Count)
                 {
-                    T largest = heap[index];
-                    if(HasLeftChild[index] && )
+                    if (value.CompareTo(heap[ParentIndex(index)]) > 0)
+                        FilterUp(index);
+                    else
+                        FilterDown(index);
                 }
+            }
+        }
+
+        private void FilterUp(int index)
+        {
+            while (HasParent(index) && heap[index].CompareTo(heap[ParentIndex(index)]) < 0)
+            {
+                T temp = heap[index];
+                heap[index] = heap[ParentIndex(index)];
+                heap[ParentIndex(index)] = temp;
+                index = ParentIndex(index);
+            }
+        }
+
+        private void FilterDown(int index)
+        {
+            while (HasLeftChild(index) && heap[index].CompareTo(heap[LeftChildIndex(index)]) > 0 || HasRightChild(index) && heap[index].CompareTo(heap[RightChildIndex(index)]) > 0)
+            {
+                int childIndex = (!HasRightChild(index) || heap[LeftChildIndex(index)].CompareTo(heap[RightChildIndex(index)]) <= 0)
+                        ? RightChildIndex(index)
+                        : LeftChildIndex(index);
+                Swap(index, childIndex);
+                index = childIndex;
             }
         }
 
