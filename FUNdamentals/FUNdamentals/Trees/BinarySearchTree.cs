@@ -92,6 +92,38 @@ namespace PracticeQuestions.BinarySearchTree
             return result;
         }
 
+        public List<T> GetPreOrderTraversal()
+        {
+            return GetPreOrderTraversal(RootNode, new List<T>());
+        }
+
+        private List<T> GetPreOrderTraversal(Node current, List<T> result)
+        {
+            if (current != null)
+            {
+                result.Add(current.Value);
+                GetPreOrderTraversal(current.Left, result);
+                GetPreOrderTraversal(current.Right, result);
+            }
+            return result;
+        }
+
+        public List<T> GetPostOrderTraversal()
+        {
+            return GetPostOrderTraversal(RootNode, new List<T>());
+        }
+
+        private List<T> GetPostOrderTraversal(Node current, List<T> result)
+        {
+            if (current != null)
+            {
+                GetPostOrderTraversal(current.Left, result);
+                GetPostOrderTraversal(current.Right, result);
+                result.Add(current.Value);
+            }
+            return result;
+        }
+
         private class Node
         {
             public Node(T value)
