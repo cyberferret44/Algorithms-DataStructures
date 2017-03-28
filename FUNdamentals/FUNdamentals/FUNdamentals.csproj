@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concurrency\Mutex.cs" />
     <Compile Include="Hashing\HashMap.cs" />
     <Compile Include="Heap\Heap.cs" />
     <Compile Include="ITestable.cs" />
     <Compile Include="SortingAlgorithms\MergeSort.cs" />
+    <Compile Include="SortingAlgorithms\QuickSort.cs" />
     <Compile Include="Trees\BinarySearchTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
