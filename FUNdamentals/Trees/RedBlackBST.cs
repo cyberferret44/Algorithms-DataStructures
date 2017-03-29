@@ -127,7 +127,7 @@ namespace PracticeQuestions
                 return;
             else if (value.CompareTo(current.Value) == 0)
             {
-                DeleteNode(ref current); // deletes and rebalances
+                //DeleteNode(ref current); // deletes and rebalances
                 Delete(ref current, value);
             }
             else if (value.CompareTo(current.Value) < 0)
