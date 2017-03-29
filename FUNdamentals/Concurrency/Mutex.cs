@@ -60,7 +60,7 @@ namespace FUNdamentals.Concurrency
             {
                 lock(_lock)
                 {
-                    decimal currentBalance = Balance - Amount;
+                    decimal currentBalance = Balance + Amount;
                     System.Threading.Thread.Sleep(100); // pretend we're waiting on verification or something
                     Balance = currentBalance;
                     return Balance;
@@ -99,7 +99,7 @@ namespace FUNdamentals.Concurrency
                 mutex.WaitOne();
                 try
                 {
-                    decimal currentBalance = Balance - Amount;
+                    decimal currentBalance = Balance + Amount;
                     System.Threading.Thread.Sleep(100); // pretend we're waiting on verification or something
                     Balance = currentBalance;
                     mutex.ReleaseMutex();
