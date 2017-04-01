@@ -113,4 +113,31 @@ namespace FUNdamentals.Concurrency
             }
         }
     }
+    //bad.Deposit(300);
+    //        var t1 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawBad));
+    //var t2 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawBad));
+    //t1.Start(); t2.Start();
+
+    //        System.Threading.Thread.Sleep(1000);
+    //        Console.WriteLine(bad.Balance);
+
+    //        //**************************
+    //        good1.Deposit(3000);
+    //        t1 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawGood1));
+    //        t2 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawGood1));
+    //        t1.Start(); t2.Start();
+
+    //        System.Threading.Thread.Sleep(1000);
+    //        Console.WriteLine(good1.Balance);
+
+    //        //**************************
+    //        good2.Deposit(30000);
+    //        t1 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawGood2));
+    //        t2 = new System.Threading.Thread(new System.Threading.ThreadStart(WithdrawGood2));
+    //        t1.Start(); t2.Start();
+
+    //        System.Threading.Thread.Sleep(1000);
+    //        Console.WriteLine(good2.Balance);
+
+    //        Console.Read();
 }
