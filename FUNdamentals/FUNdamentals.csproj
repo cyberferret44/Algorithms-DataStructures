@@ -49,6 +49,7 @@
     <Compile Include="Heap\Heap.cs" />
     <Compile Include="InterviewQuestions\PointsQuestion.cs" />
     <Compile Include="ITestable.cs" />
+    <Compile Include="NP-Complete\TravelingSalesman.cs" />
     <Compile Include="SortingAlgorithms\MergeSort.cs" />
     <Compile Include="SortingAlgorithms\QuickSort.cs" />
     <Compile Include="Trees\BinarySearchTree.cs" />
