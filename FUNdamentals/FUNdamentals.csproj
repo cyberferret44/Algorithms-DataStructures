@@ -47,6 +47,7 @@
     <Compile Include="Concurrency\Mutex.cs" />
     <Compile Include="Hashing\HashMap.cs" />
     <Compile Include="Heap\Heap.cs" />
+    <Compile Include="InterviewQuestions\FindLongestRecurringSubstring.cs" />
     <Compile Include="InterviewQuestions\PointsQuestion.cs" />
     <Compile Include="ITestable.cs" />
     <Compile Include="NP-Complete\TravelingSalesman.cs" />
@@ -63,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DynamicProgramming\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
