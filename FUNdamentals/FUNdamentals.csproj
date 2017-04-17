@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SortingAlgorithms\ArraySort.cs" />
     <Compile Include="Concurrency\Mutex.cs" />
     <Compile Include="Hashing\HashMap.cs" />
     <Compile Include="Heap\Heap.cs" />
@@ -63,6 +64,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BitMagic\" />
     <Folder Include="DynamicProgramming\" />
   </ItemGroup>
   <ItemGroup>
