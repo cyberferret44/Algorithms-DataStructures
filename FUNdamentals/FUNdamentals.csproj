@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graphs\DijkstrasTraversal.cs" />
     <Compile Include="Graphs\Grid.cs" />
     <Compile Include="Graphs\WeightedGraph.cs" />
     <Compile Include="SortingAlgorithms\ArraySort.cs" />

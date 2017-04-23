@@ -20,15 +20,23 @@ namespace FUNdamentals
         {
             List<string> map = new List<string>
             {
-                "      S      ",
-                "             ",
-                "  █      █   ",
-                "  █      █   ",
-                "  ████████   ",
-                "             ",
-                "        F    "
+                "      S           ",
+                "                  ",
+                "  █████████████   ",
+                "  █               ",
+                "████████ █████████",
+                " F █     █        ",
+                "   █ █████        ",
+                "   █ ██           ",
+                "   █              ",
+                "   █████████████  ",
+                "                  "
             };
             Grid grid = new Grid(map);
+
+            DijkstrasTraversal.FindAndPopulatePath(grid);
+            Console.WriteLine(grid.ToString());
+            Console.Read();
         }
     }
 }

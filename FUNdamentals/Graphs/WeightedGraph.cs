@@ -13,16 +13,17 @@ namespace FUNdamentals.Graphs
     public class Node
     {
         public string Name;
-        protected List<Vertex> Neighbors;
+        public List<Vertex> Neighbors;
+        public List<Vertex> ValidNeighbors => Neighbors.Where(x => x.Node != null).ToList();
         public Node(string name)
         {
             Name = name;
             Neighbors = new List<Vertex>();
         }
-        protected class Vertex
+        public class Vertex
         {
             public double Weight;
-            public Node Neighbor;
+            public Node Node;
         }
     }
 }
