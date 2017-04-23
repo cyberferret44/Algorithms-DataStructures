@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graphs\Grid.cs" />
+    <Compile Include="Graphs\WeightedGraph.cs" />
     <Compile Include="SortingAlgorithms\ArraySort.cs" />
     <Compile Include="Concurrency\Mutex.cs" />
     <Compile Include="Hashing\HashMap.cs" />
@@ -66,9 +68,6 @@
   <ItemGroup>
     <Folder Include="BitMagic\" />
     <Folder Include="DynamicProgramming\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
